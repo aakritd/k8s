@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'base'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "http://127.0.0.1:83",
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -75,7 +79,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "base/static",  # If you have a global static folder
 ]
 
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 
